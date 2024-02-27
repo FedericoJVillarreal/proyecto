@@ -1,63 +1,78 @@
-.navegacion ul{
+.navegacion ul {
     background-color: #1C0F0F;
     color: #F5F5F5;
 }
-.navegacion a{
+
+.navegacion a {
     color: #D4AF37;
 }
+
 .section1-index {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-h1{
+
+h1 {
     padding: 10px;
     background-color: #1C0F0F;
     color: #D4AF37;
     text-align: center;
 }
-h2{
+
+h2 {
     padding: 10px;
     background-color: #1C0F0F;
     color: #D4AF37;
     font-family: Arial, Helvetica, sans-serif;
 }
-.section1-personajes{
+
+.section1-personajes {
     font-family: Arial, Helvetica, sans-serif;
 }
-.section1-personajes article{
+
+.section1-personajes article {
     width: 250px;
     text-align: center;
 }
-.section1-personajes img{
+
+.section1-personajes img {
     width: 250px;
 }
-.section1-personajes p{
+
+.section1-personajes p {
     padding: 5px;
 }
-h3{
+
+h3 {
     background-color: #1C0F0F;
     color: #D4AF37;
     padding: 5px;
 }
-.section1-personajes p{
+
+.section1-personajes p {
     background-color: #1C0F0F;
     color: #F5F5F5;
 }
-.section1-requisitos{
+
+.section1-requisitos {
     font-family: Arial, Helvetica, sans-serif;
 }
-.section1-multimedia img{
+
+.section1-multimedia img {
     height: 150px;
 }
-.section1-fanart article{
+
+.section1-fanart article {
     width: 250px;
     border: 2px solid #1C0F0F;
     margin: 5px;
 }
-.section1-fanart img{
+
+.section1-fanart img {
     width: 250px;
 }
-.section1-fanart h5{
+
+.section1-fanart h5 {
     padding: 3px;
     background-color: #1C0F0F;
     color: #FFDD44;
@@ -66,84 +81,162 @@ h3{
 }
 
 /* ---videos--- */
-.sec2-multimedia{
+.sec2-multimedia {
     margin: auto;
 }
 
-.grilla-videos div{
+.grilla-videos div {
     display: flex;
     justify-content: center;
 }
 
-.grilla-videos img{
+.grilla-videos img {
     max-width: 350px;
 }
 
-@media (min-width:480px ){
-    .grilla-videos{
+@media (min-width:480px) {
+    .grilla-videos {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         max-width: 800px;
         margin: auto;
     }
 
-    .grilla-videos img{
+    .grilla-videos img {
         max-width: 250px;
     }
-    
-}
-/* ---enemigos--- */
-.sec2-multimedia{
-    margin: auto;
-}
 
-.grilla-enemigos div{
-    display: flex;
-    justify-content: center;
-}
-
-.grilla-enemigos img{
-    max-width: 350px;
-}
-
-@media (min-width:480px ){
-    .grilla-enemigos{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        max-width: 800px;
-        margin: auto;
-    }
-
-    .grilla-enemigos img{
-        max-width: 250px;
-    }
-    
 }
 
 /* ---enemigos--- */
-.sec2-multimedia{
+.sec2-multimedia {
     margin: auto;
 }
 
-.grilla-escenarios div{
+.grilla-enemigos div {
     display: flex;
     justify-content: center;
 }
 
-.grilla-escenarios img{
+.grilla-enemigos img {
     max-width: 350px;
 }
 
-@media (min-width:480px ){
-    .grilla-escenarios{
+@media (min-width:480px) {
+    .grilla-enemigos {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         max-width: 800px;
         margin: auto;
     }
 
-    .grilla-escenarios img{
+    .grilla-enemigos img {
         max-width: 250px;
     }
-    
+
+}
+
+/* ---enemigos--- */
+.sec2-multimedia {
+    margin: auto;
+}
+
+.grilla-escenarios div {
+    display: flex;
+    justify-content: center;
+}
+
+.grilla-escenarios img {
+    max-width: 350px;
+}
+
+@media (min-width:480px) {
+    .grilla-escenarios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .grilla-escenarios img {
+        max-width: 250px;
+    }
+
+}
+
+/* ----- grilla index----- */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+        "imgxl"
+        "texto"
+        "video"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+    ;
+    /* 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+      "imgxl imgxl img1 img2"
+      "imgxl imgxl img3 img4"
+      "video video texto texto"
+      "video video texto texto"; */
+}
+
+.imgxl {
+    grid-area: imgxl;
+    background-image: url('../recursos/imgxl.jfif');
+    background-size: cover;
+}
+
+.img1 {
+    grid-area: img1;
+    background-image: url('../recursos/img1.jfif');
+    background-size: cover;
+}
+
+.img2 {
+    grid-area: img2;
+    background-image: url('../recursos/img2.jfif');
+    background-size: cover;
+}
+
+.img3 {
+    grid-area: img3;
+    background-image: url('../recursos/img3.jfif');
+    background-size: cover;
+}
+
+.img4 {
+    grid-area: img4;
+    background-image: url('../recursos/img4.jfif');
+    background-size: cover;
+}
+
+.video {
+    grid-area: video;
+}
+
+.texto {
+    grid-area: texto;
+}
+
+
+
+
+@media (min-width:470px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "imgxl imgxl img1 img2"
+            "imgxl imgxl img3 img4"
+            "video video texto texto"
+            "video video texto texto";
+    }
 }
