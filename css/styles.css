@@ -223,6 +223,8 @@ h3 {
 
 .texto {
     grid-area: texto;
+    background-color: #D4AF37;
+    color: #1C0F0F;
 }
 
 
