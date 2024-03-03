@@ -1,3 +1,9 @@
+/* ---- RESETEO ---- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .navegacion ul {
     background-color: #1C0F0F;
     color: #F5F5F5;
