@@ -11,6 +11,7 @@
 
 .navegacion a {
     color: #D4AF37;
+    margin: 25px;
 }
 
 .section1-index {
@@ -33,17 +34,32 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.pers-main h1 {
+    padding: 10px;
+    background-color: #1C0F0F;
+    color: #D4AF37;
+    text-align: center;
+    size: 1000px;
+}
+.pers-main h2 {
+    padding: 10px;
+    background-color: #1C0F0F;
+    color: #D4AF37;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .section1-personajes {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .section1-personajes article {
-    width: 250px;
-    text-align: center;
+    width: 370px;
+    border: 4px solid #1C0F0F;
+    margin: 25px;
 }
 
 .section1-personajes img {
-    width: 250px;
+    width: 362px;
 }
 
 .section1-personajes p {
@@ -59,27 +75,48 @@ h3 {
 .section1-personajes p {
     background-color: #1C0F0F;
     color: #F5F5F5;
+    text-align: center;
 }
 
 .section1-requisitos {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.multi-main h1 {
+    padding: 10px;
+    background-color: #1C0F0F;
+    color: #D4AF37;
+    text-align: center;
+    size: 1000px;
+}
+.multi-main h2 {
+    padding: 10px;
+    background-color: #1C0F0F;
+    color: #D4AF37;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .section1-multimedia img {
     height: 150px;
 }
 
 .section1-fanart article {
-    width: 250px;
-    border: 2px solid #1C0F0F;
-    margin: 5px;
+    width: 370px;
+    border: 4px solid #1C0F0F;
+    margin: 25px;
 }
 
 .section1-fanart img {
-    width: 250px;
+    width: 362px;
 }
+.fanart-main h1 {
+    padding: 10px;
+    background-color: #1C0F0F;
+    color: #D4AF37;
+    text-align: center;
 
-.section1-fanart h5 {
+}
+.section1-fanart h2 {
     padding: 3px;
     background-color: #1C0F0F;
     color: #FFDD44;
@@ -100,75 +137,28 @@ h3 {
 .grilla-videos img {
     max-width: 350px;
 }
-
-@media (min-width:480px) {
-    .grilla-videos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 800px;
-        margin: auto;
-    }
-
-    .grilla-videos img {
-        max-width: 250px;
-    }
-
-}
-
 /* ---enemigos--- */
 .sec2-multimedia {
     margin: auto;
 }
-
 .grilla-enemigos div {
     display: flex;
     justify-content: center;
 }
-
 .grilla-enemigos img {
     max-width: 350px;
 }
 
-@media (min-width:480px) {
-    .grilla-enemigos {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 800px;
-        margin: auto;
-    }
-
-    .grilla-enemigos img {
-        max-width: 250px;
-    }
-
-}
-
-/* ---enemigos--- */
+/* ---escenarios--- */
 .sec2-multimedia {
     margin: auto;
 }
-
 .grilla-escenarios div {
     display: flex;
     justify-content: center;
 }
-
 .grilla-escenarios img {
     max-width: 350px;
-}
-
-@media (min-width:480px) {
-    .grilla-escenarios {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 800px;
-        margin: auto;
-    }
-
-    .grilla-escenarios img {
-        max-width: 250px;
-    }
-
 }
 
 /* ----- grilla index----- */
@@ -185,13 +175,6 @@ h3 {
         "img3"
         "img4"
     ;
-    /* 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-      "imgxl imgxl img1 img2"
-      "imgxl imgxl img3 img4"
-      "video video texto texto"
-      "video video texto texto"; */
 }
 
 .imgxl {
@@ -234,8 +217,51 @@ h3 {
     color: #1C0F0F;
 }
 
-
-
+@media (min-width:480px) {
+    .section1-fanart{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
+        margin: auto; 
+        justify-content: center; 
+    }
+    .section1-personajes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* VIDEOS */
+    .grilla-videos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
+        margin: auto;
+    }
+    .grilla-videos img {
+        max-width: 250px;
+    }
+    /* ENEMIGOS */
+    .grilla-enemigos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
+        margin: auto;
+    }
+    .grilla-enemigos img {
+        max-width: 250px;
+    }
+    /* ESCENARIOS */
+    .grilla-escenarios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 800px;
+        margin: auto;
+    }
+    .grilla-escenarios img {
+        max-width: 250px;
+    }
+}
 
 @media (min-width:470px) {
     .container {
