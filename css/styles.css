@@ -77,7 +77,20 @@ h3 {
     color: #F5F5F5;
     text-align: center;
 }
+.req-main h1 {
+    padding: 10px;
+    background-color: #1C0F0F;
+    color: #D4AF37;
+    text-align: center;
 
+}
+.section1-requisitos h2 {
+    padding: 3px;
+    background-color: #1C0F0F;
+    color: #FFDD44;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 .section1-requisitos {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -217,11 +230,41 @@ h3 {
     color: #1C0F0F;
 }
 
+/* footer */
+.pers-footer{
+    padding: 30px;
+    background-color: #1C0F0F;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.req-footer{
+    padding: 30px;
+    background-color: #1C0F0F;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.multi-footer{
+    padding: 30px;
+    background-color: #1C0F0F;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.index-footer{
+    padding: 30px;
+    background-color: #1C0F0F;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.fanart-footer{
+    padding: 30px;
+    background-color: #1C0F0F;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
 @media (min-width:480px) {
     .section1-fanart{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 800px;
+        display: flex;
+        flex-wrap: wrap;
         margin: auto; 
         justify-content: center; 
     }
